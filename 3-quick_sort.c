@@ -4,6 +4,8 @@
 
 /**
  * swap - swaps two elements
+ * @a: first element
+ * @b: second element
  */
 void swap(int *a, int *b)
 {
@@ -16,10 +18,10 @@ void swap(int *a, int *b)
  * lomuto_partition - divides an array based on a pivot element.
  * One pointer marks the boundary for elements smaller than the pivot.
  * @array: thearray being divided
- * @low:
- * @high:
- * @size:
- * Return:
+ * @low: starting index of current subarray
+ * @high: ending index of current subarray
+ * @size: of the array
+ * Return: pointer to pivot
  */
 size_t lomuto_partition(int *array, size_t low, size_t high, size_t size)
 {
